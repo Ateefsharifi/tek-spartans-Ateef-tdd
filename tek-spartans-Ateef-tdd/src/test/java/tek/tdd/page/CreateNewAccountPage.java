@@ -3,6 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import tek.tdd.utility.SeleniumUtility;
+import java.util.List;
 
 public class CreateNewAccountPage extends SeleniumUtility {
     public CreateNewAccountPage() {
@@ -27,5 +28,14 @@ public class CreateNewAccountPage extends SeleniumUtility {
 
     @FindBy(id = "signupBtn")
     public  WebElement signupBtn;
+
+    @FindBy(className = "login__title")
+    public WebElement login__title;
+
+    @FindBy(className = "signup__subtitle")
+    public WebElement signup__subtitle;
+
+    @FindBy(className = "fieldErrors")
+    public List<WebElement> error;
 
 }

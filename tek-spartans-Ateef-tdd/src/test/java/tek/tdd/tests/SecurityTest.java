@@ -18,7 +18,9 @@ public class SecurityTest extends UIBaseClass {
         sendText(signInPage.passwordInput, "Test@12345");
         clickOnElement(signInPage.loginButton);
         boolean isDisplayed = isElementDisplayed(homePage.accountLink);
-
         Assert.assertTrue(isDisplayed, "Looking for account Link to be displayed after login");
     }
+
+
+
 }

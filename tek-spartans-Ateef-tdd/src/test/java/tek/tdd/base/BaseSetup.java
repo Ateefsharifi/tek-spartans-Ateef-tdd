@@ -38,6 +38,9 @@ public abstract class BaseSetup {
             InputStream inputStream = new FileInputStream(configFilePath);
             properties = new Properties();
             properties.load(inputStream);
+
+
+
         } catch (IOException ioException) {
             LOGGER.error("Config file error with message {}", ioException.getMessage());
             throw new RuntimeException("Config file error with message" + ioException.getMessage());
